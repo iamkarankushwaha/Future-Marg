@@ -1,0 +1,80 @@
+@media (max-width:1024px) {
+    #navcontainer {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        z-index: 500;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(2px);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        transition: right 0.3s ease-in-out;
+        overflow-y: scroll;
+    }
+
+    #navcontainer.openMenu {
+        right: 0;
+    }
+
+    #navcontainer nav {
+        width: 70%;
+        max-width: 350px;
+        min-width: fit-content;
+        height: fit-content !important;
+        min-height: 100vh;
+        background-color: var(--bg-white);
+        flex-direction: column;
+        justify-content: flex-start !important;
+        padding-top: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #navcontainer nav ul {
+        width: 100%;
+        margin: 0 !important;
+        padding: 1rem 1.5rem !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    #navcontainer nav ul li {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    #navcontainer nav ul li a {
+        display: inline-block !important;
+        width: 100% !important;
+        font-size: 1.5rem;
+    }
+
+    #navcontainer nav ul .btn-close {
+        display: block !important;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+
+    .menubtnbox {
+        display: block;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+    .message-box .row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-row {
+        flex-wrap: wrap;
+    }
+}

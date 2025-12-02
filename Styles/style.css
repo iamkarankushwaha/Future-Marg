@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: solid 1px red !important; */
+}
+
+html {
+    font-size: 15px;
+}
+
+:root{
+    /* Primary Brand Colors */
+    --primary-blue: #1E90FF;        /* Dodger Blue */
+    --primary-indigo: #0057D9;      /* Azure Indigo */
+    --primary-blue-700: #1874D0;    
+    --primary-indigo-700: #003F9E;
+
+    /* Secondary Colors */
+    --secondary-purple: #6A5ACD;   
+    --secondary-green: #00A78E;    
+    --secondary-orange: #FF8C42;   
+    --secondary-pink: #FF5FA2;     
+
+    /* Background Colors */
+    --bg-primary: #F5FAFF;          
+    --bg-secondary: #E8F3FF;        
+    --bg-tertiary: #E9EDFF;         
+    --bg-purple-light: #F5F2FF;     
+    --bg-pink-light: #FFF0F7;
+    --bg-light-white: #E9F2FF;
+    --bg-white: #ffffff;
+    --bg-gray-50: #F8FAFC;
+    --bg-gray-100: #ECEFF4;
+
+    /* Text Colors */
+    --text-primary: #0A1A33;
+    --text-secondary: #43607C;
+    --text-tertiary: #6B819A;
+    --text-light: #9BB1C8;
+    --text-white: #ffffff;
+
+    /* Blue Variations */
+    --blue-10: #E6F2FF44;
+    --blue-15: #E6F2FF88;
+    --blue-25: #E6F2FF;
+    --blue-50: #DDEBFF;
+    --blue-100: #C7E0FF;
+    --blue-200: #ACD3FF;
+    --blue-500: #1E90FF;
+    --blue-600: #187CE5;
+    --blue-700: #1569C4;
+    --blue-800: #0F4A80;
+    --blue-900: #0D3E80;
+
+    /* Indigo Variations */
+    --indigo-10: #E8EEFF44;
+    --indigo-25: #E8EEFF;
+    --indigo-50: #DFE7FF;
+    --indigo-100: #D0D9FF;
+    --indigo-200: #B3C3FF;
+    --indigo-500: #3F63F1;
+    --indigo-600: #2F51E0;
+    --indigo-700: #1F39B3;
+    --indigo-900: #142477;
+
+    /* Green Variations */
+    --green-10: #DFFCF244;
+    --green-15: #DFFCF288;
+    --green-25: #E8FFF8;
+    --green-50: #DCFFF4;
+    --green-100: #C2FCE6;
+    --green-400: #2EE6A5;
+    --green-500: #00CC8B;
+    --green-600: #00A76E;
+    --green-700: #008F5A;
+    --green-800: #006B43;
+    --green-900: #00573E;
+
+    /* Orange Variations */
+    --orange-10: #FFF4E644;
+    --orange-100: #FFE8D2;
+    --orange-500: #FF7A29;
+    --orange-600: #F2651C;
+    --orange-700: #D45417;
+    --orange-800: #B34112;
+
+    /* Purple Variations */
+    --purple-10: #F3E8FF44;
+    --purple-15: #F3E8FF88;
+    --purple-25: #F3E8FF;
+    --purple-100: #ECE4FF;
+    --purple-500: #8D6BFC;
+    --purple-600: #7352EB;
+    --purple-700: #5A3ACD;
+    --purple-800: #3E27A3;
+
+    /* Yellow Variations */
+    --yellow-10: #f59e0b33;
+    --yellow-20: #FFF9E688;
+    --yellow-25: #fff9e6ee;
+    --yellow-100: #FFF5D1;
+    --yellow-400: #FFD546;
+    --yellow-500: #F8C624;
+    --yellow-600: #D4A61B;
+    --yellow-700: #B38614;
+    --yellow-800: #fbbe24e7;
+
+    /* Red Variations */
+    --red-100: #FFDADA;
+    --red-500: #FF4C4C;
+    --red-600: #E03A3A;
+
+    /* Slate Variations */
+    --slate-100: #EDF3F9;
+    --slate-200: #DCE5F0;
+    --slate-300: #C2D0DD;
+    --slate-400: #94A9BC;
+    --slate-500: #64768A;
+    --slate-600: #425266;
+    --slate-700: #2A3A4D;
+    --slate-800: #182637;
+    --slate-900: #0A1727;
+    
+    /* Border Colors */
+    --border-light: #D6E1EE;
+    --border-medium: #C0CCDB;
+
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 50, 100, 0.08);
+    --shadow-medium: rgba(0, 50, 100, 0.15);
+    --shadow-heavy: rgba(0, 50, 100, 0.25);
+
+    /* Gradient Combinations */
+    --gradient-primary: linear-gradient(135deg, #1E90FF, #0057D9);
+    --gradient-primary-2: linear-gradient(135deg, #1E90FF, #7352EB);
+    --gradient-secondary: linear-gradient(135deg, #6A5ACD, #FF5FA2);
+    --gradient-success: linear-gradient(135deg, #00CC8B, #00A76E);
+    --gradient-warning: linear-gradient(135deg, #FF7A29, #F2651C);
+
+    /* Background Gradients */
+    --gradient-bg-light: linear-gradient(180deg, #DFE7FF, #C7E0FF);
+    --gradient-bg-dark: linear-gradient(135deg, #0A1727, #0D3E80, #142477);
+
+    /* Interactive States */
+    --hover-blue: #1569C4;
+    --hover-indigo: #1F39B3;
+    --focus-ring: rgba(30, 144, 255, 0.35);
+
+    /* Special Colors */
+    --whatsapp-green: #25d366;
+    --success: var(--green-500);
+    --error: var(--red-500);
+    --warning: var(--orange-500);
+    --info: var(--blue-500);
+}
+
+.text-primary{
+    color: var(--text-primary) !important;
+}
+.text-secondary{
+    color: var(--text-secondary) !important;
+}
+.text-tertiary{
+    color: var(--text-tertiary) !important;
+}
+
+body {
+    background: var(--bg-white);
+    color: var(--text-primary);
+    font-size: 1rem;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+:-webkit-any(li) {
+    list-style: none;
+}
+
+:-webkit-any(a) {
+    text-decoration: none;
+    color: inherit;
+}
+
+:-webkit-any(i) {
+    position: relative;
+    top: 2px;
+}
+:-webkit-any(p) {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.trending-container{
+    width: 100%;
+    background-color: var(--text-primary);
+    color: var(--bg-white);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+}
+.trending-container i{
+    color: var(--blue-200);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    background-color: rgba(255, 255, 255, 0.96);
+    transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+    border-bottom: solid 1px var(--border-medium);
+    box-shadow: 0 5px 25px -2px var(--shadow-medium);
+}
+
+.brand-name {
+    font-weight: 900;
+    font-size: 2rem;
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navbar Starts */
+.navbox li a{
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    &:hover {
+        background: var(--blue-50);
+        color: var(--primary-blue);
+        box-shadow: 0 2px 2px -1px var(--shadow-light);
+    }
+}
+
+.menubtnbox {
+    display: none;
+}
+
+
+/* main */
+
+.banner-btn{
+    background-color: var(--slate-900) !important;
+}
+
+#features .card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient-primary-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0rem;
+    top: unset;
+    padding: 0.5rem;
+    font-size: 3.65rem;
+}
+#features .card h5{
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    color: var(--text-primary);
+}
+#features .card p{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem !important;
+}
+
+#courses .card{
+    max-width: 400px !important;
+    padding: 0rem !important;
+}
+.course-name{
+    color: var(--indigo-900);
+}
+#courses .card:hover .course-name{
+    color: var(--primary-indigo);
+}
+.course-desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.course-features, .course-price{
+    user-select: none;
+}
+
+#mentorcard{
+    background-color: #ffffff21 !important;
+    backdrop-filter: blur(10px);
+    border: var(--blue-10) 1px solid !important;
+}
+#mentorcard img{
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto auto;
+    border: solid 2px var(--slate-100);
+}
+
+.mentor-name{
+    color: white;
+}
+.mentor-designation{
+    color: var(--primary-blue);
+}
+.mentor-desc{
+    color: var(--slate-200);
+}
