@@ -69,6 +69,15 @@
     html {
         font-size: 14px;
     }
+    .contact-p-card{
+        flex-wrap: wrap;
+    }
+    .vr{
+        border-bottom: solid 1px var(--border-gray-300);
+        height: 1px !important;
+        min-height: auto !important;
+        width: 100% !important;
+    }
     .message-box .row{
         flex-direction: column;
         text-align: center;
