@@ -153,3 +153,13 @@ section {
 .email{
     color: var(--text-secondary);
 }
+
+
+.secondary-link {
+    color: var(--text-light);
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: var(--primary-indigo) !important;
+        text-decoration: underline !important;
+    }
+}
