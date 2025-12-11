@@ -133,6 +133,9 @@ html {
     --shadow-light: rgba(0, 50, 100, 0.08);
     --shadow-medium: rgba(0, 50, 100, 0.15);
     --shadow-heavy: rgba(0, 50, 100, 0.25);
+    --shadow-sm: 0px 10px 40px var(--shadow-light);
+    --shadow-md: 0px 20px 60px var(--shadow-medium);
+    --shadow-lg: 0px 30px 80px var(--shadow-heavy);
 
     /* Gradient Combinations */
     --gradient-primary: linear-gradient(135deg, #1E90FF, #0057D9);
@@ -223,8 +226,8 @@ header {
 }
 
 header.scrolled {
-    border-bottom: solid 1px var(--border-medium);
-    box-shadow: 0 5px 25px -2px var(--shadow-medium);
+    border-bottom: solid 1px var(--border-light);
+    box-shadow: var(--shadow-md);
 }
 
 .brand-name {
@@ -250,7 +253,9 @@ header.scrolled {
         box-shadow: 0 2px 2px -1px var(--shadow-light);
     }
 }
-
+.navbox li a i{
+    display: none;
+}
 .menubtnbox {
     display: none;
 }
@@ -286,6 +291,11 @@ header.scrolled {
     color: var(--text-secondary);
     margin-bottom: 0.5rem !important;
 }
+
+#about p i{
+    top: unset;
+}
+
 
 #courses .card{
     max-width: 400px !important;

@@ -8,7 +8,7 @@
     border: none !important;
     border-radius: 12px !important;
     white-space: nowrap;
-    box-shadow: 0 5px 8px var(--shadow-medium) !important;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.20) !important;
 
     &:hover {
         background: var(--gradient-primary-2) !important;
@@ -29,7 +29,7 @@
     border: solid 2px var(--primary-indigo) !important;
     border-radius: 12px !important;
     white-space: nowrap;
-    box-shadow: 0 5px 8px var(--shadow-medium) !important;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.20) !important;
 
     &:hover {
         background: var(--gradient-primary);
@@ -46,16 +46,16 @@
     width: 100% !important;
     padding: 1.5rem !important;
     border-radius: 16px !important;
-    box-shadow: 0 4px 6px var(--shadow-medium) !important;
+    box-shadow: var(--shadow-sm) !important;
     background-color: var(--bg-white) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent !important;
+    border: 1.5px solid transparent !important;
     overflow: hidden !important;
 
     &:hover {
-        border: solid 2px var(--primary-indigo) !important;
+        border: solid 1.5px var(--primary-indigo) !important;
         transform: translateY(-5px);
-        box-shadow: 0 10px 15px var(--shadow-heavy) !important;
+        box-shadow: var(--shadow-md) !important;
     }
 }
 

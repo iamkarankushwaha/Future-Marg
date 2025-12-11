@@ -4,8 +4,7 @@
         top: 0;
         right: -100vw;
         z-index: 500;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(3px);
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -30,6 +29,7 @@
         justify-content: flex-start !important;
         padding-top: 3.5rem;
         padding-bottom: 2rem;
+        border: solid 1px var(--border-medium);
     }
 
     #navcontainer nav ul {
@@ -51,6 +51,10 @@
         font-size: 1.5rem;
     }
 
+    .navbox li a i {
+        display: unset;
+    }
+
     #navcontainer nav ul .btn-close {
         display: block !important;
         position: absolute;
@@ -69,16 +73,19 @@
     html {
         font-size: 14px;
     }
-    .contact-p-card{
+
+    .contact-p-card {
         flex-wrap: wrap;
     }
-    .vr{
+
+    .vr {
         border-bottom: solid 1px var(--border-gray-300);
         height: 1px !important;
         min-height: auto !important;
         width: 100% !important;
     }
-    .message-box .row{
+
+    .message-box .row {
         flex-direction: column;
         text-align: center;
     }
