@@ -129,14 +129,6 @@ html {
     --border-light: #D6E1EE;
     --border-medium: #C0CCDB;
 
-    /* Shadow Colors */
-    --shadow-light: rgba(0, 50, 100, 0.08);
-    --shadow-medium: rgba(0, 50, 100, 0.15);
-    --shadow-heavy: rgba(0, 50, 100, 0.25);
-    --shadow-sm: 0px 10px 40px var(--shadow-light);
-    --shadow-md: 0px 20px 60px var(--shadow-medium);
-    --shadow-lg: 0px 30px 80px var(--shadow-heavy);
-
     /* Gradient Combinations */
     --gradient-primary: linear-gradient(135deg, #1E90FF, #0057D9);
     --gradient-primary-2: linear-gradient(135deg, #1E90FF, #7352EB);
@@ -227,7 +219,7 @@ header {
 
 header.scrolled {
     border-bottom: solid 1px var(--border-light);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.25);
 }
 
 .brand-name {
@@ -250,7 +242,7 @@ header.scrolled {
     &:hover {
         background: var(--blue-50);
         color: var(--primary-blue);
-        box-shadow: 0 2px 2px -1px var(--shadow-light);
+        box-shadow: -2px 2px 3px -2px rgba(0, 0, 0, 0.25);
     }
 }
 .navbox li a i{
@@ -300,6 +292,17 @@ header.scrolled {
 #courses .card{
     max-width: 400px !important;
     padding: 0rem !important;
+    border: none !important;
+    &:hover{
+        transform: unset;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    }
+}
+#courses .card img{
+    transition: all 0.3s ease-in-out;
+}
+#courses .card:hover img{
+    scale: 1.05;
 }
 .course-name{
     color: var(--indigo-900);
@@ -319,9 +322,16 @@ header.scrolled {
 }
 
 #mentorcard{
-    background-color: #ffffff21 !important;
+    background-color: #ffffff16 !important;
     backdrop-filter: blur(10px);
     border: var(--blue-10) 1px solid !important;
+}
+#mentorcard{
+    &:hover{
+        border-color: var(--bg-primary) !important;
+        transform: unset;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    }
 }
 #mentorcard img{
     max-width: 150px;
