@@ -130,11 +130,13 @@ html {
     --border-medium: #C0CCDB;
 
     /* Shadow */
+    --shadow-btn: -2px 2px 3px -1px rgba(0, 0, 0, 0.15), 2px -2px 3px -1px rgba(0, 0, 0, 0.15), -2px -2px 3px -1px rgba(0, 0, 0, 0.15), 2px 2px 3px -1px rgba(0, 0, 0, 0.15);
     --shadow-card: -3px 3px 4px -1px rgba(0, 0, 0, 0.10), 3px -3px 4px -1px rgba(0, 0, 0, 0.10), -3px -3px 4px -1px rgba(0, 0, 0, 0.10), 3px 3px 4px -1px rgba(0, 0, 0, 0.10);
+    --shadow-lg: -5px 5px 20px 0px rgba(0, 0, 0, 0.10), 5px -5px 20px 0px rgba(0, 0, 0, 0.10), -5px -5px 20px 0px rgba(0, 0, 0, 0.10), 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
     /* Gradient Combinations */
     --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--primary-indigo));
     --gradient-primary-2: linear-gradient(135deg, var(--primary-blue-700), var(--primary-indigo-700));
-    --gradient-secondary: linear-gradient(135deg, #6A5ACD, #FF5FA2);
+    --gradient-secondary: linear-gradient(135deg, var(--purple-500), var(--indigo-900));
     --gradient-success: linear-gradient(135deg, #00CC8B, #00A76E);
     --gradient-warning: linear-gradient(135deg, #FF7A29, #F2651C);
 
@@ -221,7 +223,7 @@ header {
 
 header.scrolled {
     border-bottom: solid 1px var(--border-light);
-    box-shadow: 0px 5px 8px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 3px 5px -1px rgba(0, 0, 0, 0.20), 2px -3px 5px -1px rgba(0, 0, 0, 0.20), -2px 3px 5px -1px rgba(0, 0, 0, 0.20), 2px -3px 5px -1px rgba(0, 0, 0, 0.20);
 }
 
 .brand-name {
@@ -265,19 +267,19 @@ header.scrolled {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--gradient-primary-2);
+    background: var(--gradient-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0rem;
     top: unset;
     padding: 0.5rem;
-    font-size: 3.65rem;
+    font-size: 3.75rem;
 }
 #features .card h5{
     font-size: 1.5rem !important;
     font-weight: 600 !important;
     margin-bottom: 0.5rem !important;
-    color: var(--text-primary);
+    color: var(--indigo-900);
 }
 #features .card p{
     font-size: 1rem !important;
@@ -295,10 +297,24 @@ header.scrolled {
     max-width: 400px !important;
     padding: 0rem !important;
     border: 2px solid var(--bg-white) !important;
+    position: relative;
     &:hover{
+        box-shadow: var(--shadow-card);
         transform: unset !important;
         scale: unset;
     }
+}
+#courses .card::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-indigo-700);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#courses .card:hover::after{
+    width: 100%;
 }
 #courses .card img{
     transition: all 0.3s ease-in-out;
@@ -328,7 +344,6 @@ header.scrolled {
     backdrop-filter: blur(10px);
     border: var(--blue-10) 1px solid !important;
     &:hover{
-        border-color: var(--primary-blue) !important;
         transform: unset;
         scale: unset;
     }

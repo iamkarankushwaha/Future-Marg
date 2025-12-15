@@ -8,7 +8,7 @@
     border: none !important;
     border-radius: 12px !important;
     white-space: nowrap;
-    box-shadow: -2px 2px 3px -1px rgba(0, 0, 0, 0.15), 2px -2px 3px -1px rgba(0, 0, 0, 0.15), -2px -2px 3px -1px rgba(0, 0, 0, 0.15), 2px 2px 3px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-btn);
     &:hover {
         background: var(--gradient-primary-2) !important;
     }
@@ -28,7 +28,7 @@
     border: solid 2px var(--primary-indigo) !important;
     border-radius: 12px !important;
     white-space: nowrap;
-    box-shadow: -2px 2px 3px -1px rgba(0, 0, 0, 0.15), 2px -2px 3px -1px rgba(0, 0, 0, 0.15), -2px -2px 3px -1px rgba(0, 0, 0, 0.15), 2px 2px 3px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-btn);
 
     &:hover {
         background: var(--gradient-primary);
@@ -46,7 +46,7 @@
     padding: 1.5rem !important;
     border-radius: 16px !important;
     background-color: var(--bg-white) !important;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     border: 1.5px solid transparent !important;
     overflow: hidden !important;
     box-shadow: var(--shadow-card);
@@ -177,3 +177,6 @@ section {
         text-decoration: underline !important;
     }
 }
+
+
+/* Model and Its Elements */
