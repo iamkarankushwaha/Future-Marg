@@ -21,3 +21,19 @@ function closeMenu() {
 }
 const navcontainer = document.getElementById('navcontainer');
 navcontainer.addEventListener('click', closeMenu);
+
+
+// Share btn
+const shareBtn = document.getElementById("shareBtn");
+shareBtn.addEventListener("click", async () => {
+    event.preventDefault();
+    if (navigator.share) {
+        await navigator.share({
+            title: 'CUET 2026 Aarambh Batch - School to Dream College',
+            url: 'https://futuremarg.netlify.app?#cuet_2026_aarambh_batch'
+        });
+    } else {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Link copied");
+    }
+});
