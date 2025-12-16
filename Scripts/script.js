@@ -30,10 +30,11 @@ shareBtn.addEventListener("click", async () => {
     if (navigator.share) {
         await navigator.share({
             title: 'CUET 2026 Aarambh Batch - School to Dream College',
-            url: 'https://futuremarg.netlify.app?#cuet_2026_aarambh_batch'
+            url: 'https://futuremarg.netlify.app?#cuet_2026_aarambh_batch Hello, Check this out - The Future Marg CUET 2026 Aarambh Batch is a comprehensive, start-to-finish mentorship program designed to take you from school corridors to your dream college gates.',
         });
     } else {
         await navigator.clipboard.writeText(window.location.href);
         alert("Link copied");
     }
 });
+
