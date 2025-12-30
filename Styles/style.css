@@ -175,6 +175,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    padding: 0 !important;
 }
 
 :-webkit-any(li) {
@@ -198,6 +199,14 @@ body {
 p,h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
+}
+.z-index-9999{
+    z-index: 9999 !important;
+}
+
+/* Model and Its Elements */
+.fade-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .trending-container{

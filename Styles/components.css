@@ -28,7 +28,7 @@
     border: solid 2px var(--primary-indigo) !important;
     border-radius: 12px !important;
     white-space: nowrap;
-    box-shadow: var(--shadow-btn);
+    /* box-shadow: var(--shadow-btn); */
 
     &:hover {
         background: var(--gradient-primary);
@@ -179,4 +179,3 @@ section {
 }
 
 
-/* Model and Its Elements */
