@@ -1,6 +1,6 @@
 .primary-btn {
     font-weight: 600 !important;
-    font-size: 1.1rem !important;
+    font-size: 1.1rem;
     padding: 0.75rem 1.5rem !important;
     transition: transform 0.3s ease-in-out;
     background: var(--gradient-primary);
@@ -9,6 +9,7 @@
     border-radius: 12px !important;
     white-space: nowrap;
     box-shadow: var(--shadow-btn);
+
     &:hover {
         background: var(--gradient-primary-2) !important;
     }
@@ -50,6 +51,7 @@
     border: 1.5px solid transparent !important;
     overflow: hidden !important;
     box-shadow: var(--shadow-card);
+
     &:hover {
         border: solid 1.5px var(--primary-indigo) !important;
         transform: translateY(-5px);
@@ -64,12 +66,12 @@ section {
 }
 
 .section-title {
-    color: var(--indigo-900);
+    color: var(--blue-900);
     margin-bottom: 3rem;
 }
 
 .section-title-light {
-    color: var(--indigo-50);
+    color: var(--text-white);
     margin-bottom: 3rem;
 }
 
@@ -97,6 +99,7 @@ section {
     padding: 0.5rem 1rem !important;
     font-size: 0.95rem !important;
     font-weight: 500 !important;
+    border: 0.5px solid var(--slate-300) !important;
     border-radius: 20px !important;
     margin-bottom: 1rem !important;
     box-shadow: -1px 1px 2px -1px rgba(0, 0, 0, 0.05), 1px -1px 2px -1px rgba(0, 0, 0, 0.05), -1px -1px 2px -1px rgba(0, 0, 0, 0.05), 1px 1px 2px -1px rgba(0, 0, 0, 0.05);
@@ -135,8 +138,10 @@ section {
     color: var(--slate-200);
     transition: all 0.3s ease-in-out;
     box-shadow: -1px 2px 3px -1px rgba(0, 0, 0, 0.15), 1px -2px 3px -1px rgba(0, 0, 0, 0.15), -1px -2px 3px -1px rgba(0, 0, 0, 0.15), 1px 2px 3px -1px rgba(0, 0, 0, 0.15);
+
     &:hover {
         background-color: var(--blue-600);
+        color: var(--text-white);
     }
 }
 
@@ -177,5 +182,3 @@ section {
         text-decoration: underline !important;
     }
 }
-
-
