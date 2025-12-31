@@ -37,6 +37,9 @@ html {
     --bg-white: #ffffff;
     --bg-gray-50: #F8FAFC;
     --bg-gray-100: #ECEFF4;
+    --fade-bg-dark: rgba(0, 0, 0, 0.5);
+    --fade-bg-light: rgba(255, 255, 255, 0.5);
+    --fade-bg-light-lg: rgba(255, 255, 255, 0.05);
 
     /* Text Colors */
     --text-primary: #0A1A33;
@@ -227,7 +230,7 @@ h6 {
 
 /* Model and Its Elements */
 .fade-backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--fade-bg-dark);
 }
 
 .trending-container {
@@ -402,9 +405,14 @@ header.scrolled {
     user-select: none;
 }
 
+
+.mentor-container {
+    overflow-x: auto !important;
+    scrollbar-gutter: stable;
+}
 #mentorcard {
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    backdrop-filter: blur(10px);
+    display: block !important;
+    background-color: var(--fade-bg-light-lg) !important;
     border: var(--blue-10) 1px solid !important;
 
     &:hover {
