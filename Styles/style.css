@@ -147,6 +147,7 @@ html {
 
     /* Background Gradients */
     --gradient-bg-light: linear-gradient(180deg, #DFE7FF, #C7E0FF);
+    --gradient-bg-light-lg: linear-gradient(180deg, var(--bg-white), var(--blue-50));
     --gradient-bg-dark: linear-gradient(135deg, #0A1727, #0D3E80, #142477);
 
     /* Interactive States */
@@ -394,7 +395,7 @@ header.scrolled {
 
 .course-desc {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
