@@ -120,16 +120,10 @@
     </header>
 
     <main>
-        <section id="banners" class="container-fluid px-0 py-3">
-            <div id="heroCarousel" class="carousel slide container-xl" data-bs-ride="carousel" data-bs-pause="true" data-bs-interval="6000">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active banner-btn"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="banner-btn"></button>
-                </div>
-            
+        <section id="features" class="container-fluid px-0 pt-3" style="background: var(--gradient-bg-light);">
+            <div id="heroCarousel" class="carousel slide container-xl mb-5" data-bs-ride="carousel" data-bs-pause="true" data-bs-interval="6000">
                 <!-- Carousel items -->
-                <div class="carousel-inner rounded-4 overflow-hidden border">
+                <div class="carousel-inner rounded-4 overflow-hidden" style="box-shadow: var(--shadow-card);">
                     <div class="carousel-item active">
                         <img src="Banner-Imgs/Banner_FutureMarg.jpg" class="w-100" alt="Image 1" loading="lazy">
                     </div>
@@ -146,14 +140,13 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-        </section>
-
-        <section id="features" class="container-fluid px-0" style="background: var(--gradient-bg-light);">
             <div class="w-100 text-center">
                 <span class="tag green-tag"><i class="fi fi-rr-sparkles me-2"></i>What We Offer</span>
                 <h2 class="section-title fs-1 fw-bold">Everything You Need to Excel</h2>
             </div>
             <div class="container-xl">
+                <!-- Banners -->
+                <!-- Features Card -->
                 <div class="py-3 w-100 d-flex justify-content-center flex-wrap m-0 gap-4">
                     <div class="card" style="max-width: 250px !important;">
                         <div class="text-center">
