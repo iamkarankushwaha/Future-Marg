@@ -47,7 +47,7 @@
 </head>
 <body>
     <!-- Preloader -->
-    <div id="preloader" class="position-fixed top-0 w-100 h-100 z-index-9999 d-flex flex-column justify-content-center align-items-center" style="backdrop-filter: blur(30px);;">
+    <div id="preloader" class="position-fixed top-0 w-100 h-100 z-index-9999 d-none flex-column justify-content-center align-items-center" style="backdrop-filter: blur(30px);;">
         <div class="loader">
             <div class="spinner-border text-primary" style="width: 60px; height: 60px; border-width: 5px;" role="status">
                 <span class="visually-hidden">Loading...</span>
@@ -121,6 +121,7 @@
 
     <main>
         <section id="features" class="container-fluid px-0 pt-3" style="background: var(--gradient-bg-light);">
+            <!-- banners -->
             <div id="heroCarousel" class="carousel slide container-xl mb-5" data-bs-ride="carousel" data-bs-pause="true" data-bs-interval="6000">
                 <!-- Carousel items -->
                 <div class="carousel-inner rounded-4 overflow-hidden" style="box-shadow: var(--shadow-card);">
@@ -140,57 +141,57 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
+            <!-- Banners End-->
             <div class="w-100 text-center">
                 <span class="tag green-tag"><i class="fi fi-rr-sparkles me-2"></i>What We Offer</span>
                 <h2 class="section-title fs-1 fw-bold">Everything You Need to Excel</h2>
             </div>
             <div class="container-xl">
-                <!-- Banners -->
                 <!-- Features Card -->
-                <div class="py-3 w-100 d-flex justify-content-center flex-wrap m-0 gap-4">
-                    <div class="card" style="max-width: 250px !important;">
+                <div class="features-card-wrapper py-3 w-100 d-flex justify-content-center flex-wrap m-0 gap-4">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-users"></i>
                             <h5>1:1 Mentorship</h5>
                             <p>Personalised roadmap to drive your academic outcomes effectively.</p>
                         </div>
                     </div>
-                    <div class="card" style="max-width: 250px;">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-review"></i>
                             <h5>Expert Mentors</h5>
                             <p>Seasoned mentors delivering high-impact learning clarity consistently.</p>
                         </div>
                     </div>
-                    <div class="card" style="max-width: 250px;">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-video-camera-alt"></i>
                             <h5>Live Sessions</h5>
                             <p>Interactive live sessions with real-time doubt clearing and engaging discussions.</p>
                         </div>
                     </div>
-                    <div class="card" style="max-width: 250px;">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-book-alt"></i>
                             <h5>Study Plans</h5>
                             <p>Customized study schedules and strategies tailored to your goals and timeline.</p>
                         </div>
                     </div>
-                    <div class="card" style="max-width: 250px;">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-journal"></i>
                             <h5>Mock Tests</h5>
                             <p>Exam-style drills to boost accuracy, speed, and confidence.</p>
                         </div>
                     </div>
-                    <div class="card" style="max-width: 250px;">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-graduation-cap"></i>
                             <h5>College Selection</h5>
                             <p>Structured shortlisting using student goals, merits and smart counselling.</p>
                         </div>
                     </div>
-                    <div class="card" style="max-width: 250px;">
+                    <div class="card" style="max-width: 260px;">
                         <div class="text-center">
                             <i class="fi fi-rr-messages-question"></i>
                             <h5>Doubt Support</h5>
@@ -205,12 +206,12 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-lg-6" style="min-height: 400px;">
-                        <div class="h-100 p-3">
+                        <div class="h-100">
                             <!-- <img class="img-fluid w-100 h-100" src="Image/about_Future_Marg.jpg" alt="FutureMarg" style="object-fit: contain;" loading="lazy"> -->
                             <iframe class="img-fluid w-100 h-100 rounded-4" src="https://youtube.com/embed/QAKqg8Hxlio?si=piCtM1VIBDkphU5u"></iframe>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-4">
                         <h6 class="tag blue-tag"><i class="fi fi-rr-bullseye me-2"></i>About Us</h6>
                         <h1 class="section-title fs-1 fw-bold mb-3">Welcome to FutureMarg</h1>
                         <p class="mb-1">FutureMarg empowers students with precise career direction, expert guidance, and structured preparation to unlock their full potential. We aim to build a future where every learner makes informed choices and achieves success with clarity and confidence.</p>
@@ -242,7 +243,7 @@
             </div>
         </section>
 
-        <section id="courses" class="container-fluid px-0" style="background-color: var(--bg-white);">
+        <section id="courses" class="container-fluid px-0" style="background-color: var(--bg-tertiary);">
             <div class="w-100 text-center">
                 <span class="tag purple-tag"><i class="fi fi-rr-badge me-2"></i>This Is Ultimate</span>
                 <!-- <h2 class="section-title fs-1 fw-bold">Mentorship Programme</h2> -->
@@ -317,9 +318,9 @@
                 <h2 class="section-title-light fs-1 fw-bold">Strategic Guidance Team</h2>
             </div>
             <div class="container-xl mentor-container">
-                <div class="py-3 w-100 d-flex justify-content-center m-0 gap-4" style="min-width: calc(350px * 2);">
+                <div class="mentor-wrapper pb-4 pt-2 w-100 d-flex justify-content-center m-0 gap-4">
                     <!-- Mentor Karan -->
-                    <div class="card" id="mentorcard" style="max-width: 400px !important;">
+                    <div class="card" id="mentorcard" style="max-width: 400px;">
                         <div class="p-4">
                             <img src="Mentors-Imgs/Karan_Kushwaha_Profile.jpeg" alt="Karan Kushwaha" class="w-100 rounded-circle" loading="lazy">
                             <div class="text-center w-100 mt-3">
@@ -335,7 +336,7 @@
                         </div>
                     </div>
                     <!-- Mentor Coming Soon -->
-                    <div class="card coming-soon-card user-select-none " id="mentorcard" style="max-width: 400px !important;">
+                    <div class="card coming-soon-card user-select-none " id="mentorcard" style="max-width: 400px;">
                         <div class="p-4">
                             <img src="Mentors-Imgs/Karan_Kushwaha_Profile.jpeg" alt="Karan Kushwaha" class="w-100 rounded-circle" loading="lazy">
                             <div class="text-center w-100 mt-3">

@@ -73,7 +73,7 @@
     html {
         font-size: 15px;
     }
-
+    
     .contact-p-card {
         flex-wrap: wrap;
     }
@@ -92,5 +92,25 @@
 
     .footer-row {
         flex-wrap: wrap;
+    }
+}
+
+
+/* mobile responsiiveness */
+@media (max-width:565px) {
+    html {
+        font-size: 14px;
+    }
+    .features-card-wrapper .card{
+        max-width: unset !important;
+        width: 95% !important;
+    }
+
+    .mentor-wrapper .card{
+        max-width: unset !important;
+        min-width: fit-content;
+    }
+    .mentor-wrapper{
+        justify-content: flex-start !important;
     }
 }

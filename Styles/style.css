@@ -30,7 +30,7 @@ html {
     /* Background Colors */
     --bg-primary: #F5FAFF;
     --bg-secondary: #E8F3FF;
-    --bg-tertiary: #E9EDFF;
+    --bg-tertiary: #d6e8fb;
     --bg-purple-light: #F5F2FF;
     --bg-pink-light: #FFF0F7;
     --bg-light-white: #E9F2FF;
@@ -408,8 +408,11 @@ header.scrolled {
 
 
 .mentor-container {
-    overflow-x: auto !important;
-    scrollbar-gutter: stable;
+    overflow: hidden;
+    overflow-x: scroll !important;
+}
+.mentor-container::-webkit-scrollbar {
+    display: none;
 }
 #mentorcard {
     display: block !important;
@@ -452,6 +455,7 @@ header.scrolled {
 }
 
 .accordion-item {
+    border: none !important;
     outline: none;
     background-color: none;
     transition: all 0.3s ease-in-out;
