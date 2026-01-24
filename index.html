@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/components.css">
     <link rel="stylesheet" href="Styles/responsive.css">
+    <!-- Tally Form Script -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <!-- Preloader -->
@@ -78,7 +80,7 @@
         <div class="container-xl d-flex justify-content-between align-items-center">
             <div class="logobox">
                 <a href="/" class="d-flex align-items-center">
-                    <div class="overflow-hidden"  style="width: 50px !important; height: 50px !important; border-radius: 15px;">
+                    <div class="overflow-hidden"  style="width: 50px !important; height: 50px !important; border-radius: 12px;">
                         <img src="Image/Future_Marg_Logo.png" alt="FutureMarg Logo" class="logo-img w-100" loading="eager" style="object-fit: fit;">
                     </div>
                     <div class="ms-2">
@@ -124,7 +126,7 @@
             <!-- banners -->
             <div id="heroCarousel" class="carousel slide container-xl mb-5" data-bs-ride="carousel" data-bs-pause="true" data-bs-interval="6000">
                 <!-- Carousel items -->
-                <div class="carousel-inner overflow-hidden" style="box-shadow: var(--shadow-card); border-radius: 50px;">
+                <div class="carousel-inner overflow-hidden" style="box-shadow: var(--shadow-card); border-radius: 25px;">
                     <div class="carousel-item active">
                         <img src="Banner-Imgs/Banner_FutureMarg.jpg" class="w-100" alt="Image 1" loading="lazy">
                     </div>
@@ -208,7 +210,7 @@
                     <div class="col-lg-6" style="min-height: 400px;">
                         <div class="h-100">
                             <!-- <img class="img-fluid w-100 h-100" src="Image/about_Future_Marg.jpg" alt="FutureMarg" style="object-fit: contain;" loading="lazy"> -->
-                            <iframe class="img-fluid w-100 h-100 rounded-5" src="https://youtube.com/embed/QAKqg8Hxlio?si=piCtM1VIBDkphU5u"></iframe>
+                            <iframe class="img-fluid w-100 h-100 rounded-4" src="https://youtube.com/embed/QAKqg8Hxlio?si=piCtM1VIBDkphU5u"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4">
@@ -277,7 +279,7 @@
                     <div class="row position-relative" id="cuet_2026_aarambh_batch" style="max-width: 950px; margin: auto;">
                         <div class="col-lg-6 product-details p-0">
                             <div class="product-thumbnail-box">
-                                <img src="Image/CUET_2026 Aarambh_Batch_Banner.jpg" alt="CUET 2026 Aarambh Batch" class="w-100 h-100 rounded-5 border" style="object-fit: contain;" loading="lazy">
+                                <img src="Image/CUET_2026 Aarambh_Batch_Banner.jpg" alt="CUET 2026 Aarambh Batch" class="w-100 h-100 rounded-4 border" style="object-fit: contain;" loading="lazy">
                             </div>
                         </div>
                         <div class="col-lg-6 mt-4 product-purchase-section position-sticky top-0 end-0" style="height: fit-content !important;">
@@ -290,7 +292,7 @@
                                 <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i>College Preference List Tailored to Your Goals</li>
                                 <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i>Ongoing Doubt Support and Progress Tracking</li>
                             </ul>
-                            <div class="product-purchase-box p-4 rounded-5 position-relative" style="background: var(--gradient-bg-light-lg); box-shadow: var(--shadow-card);">
+                            <div class="product-purchase-box p-4 rounded-4 position-relative" style="background: var(--gradient-bg-light-lg); box-shadow: var(--shadow-card);">
                                 <div class="d-flex align-items-center flex-wrap mb-5" style="gap: 5px 20px;">
                                     <span class="course-features fs-6 text-tertiary text-nowrap"><i class="fi fi-rr-calendar me-2"></i>March Onwards</span>
                                     <span class="course-features fs-6 text-tertiary text-nowrap"><i class="fi fi-rr-quiz-alt me-2"></i></i>6 Mock Tests</span>
@@ -300,7 +302,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <p class="course-price fs-3 fw-bold">₹59<span class="drop-price fs-6 ms-3 text-tertiary" style="text-decoration: line-through;">₹99</span></p>
-                                    <a href="https://forms.gle/P5kPU5uLgxJQg5dRA" target="_blank" class="btn primary-btn px-4 py-3">Enroll Now<i class="fi fi-rr-rocket-lunch ms-2"></i></a>
+                                    <a href="#tally-open=gD9N1d&tally-layout=modal&tally-width=450&tally-align-left=1&tally-hide-title=1&tally-emoji-text=🎓&tally-emoji-animation=tada&tally-auto-close=1000" class="btn primary-btn px-4 py-3">Enroll Now<i class="fi fi-rr-rocket-lunch ms-2"></i></a>
                                 </div>
                                 <div class="sharebox d-flex justify-content-center align-items-center position-absolute top-0 end-0 me-2 mt-2">
                                     <button class="btn icon-btn d-flex justify-content-center align-items-center" id="shareBtn"><i class="fi fi-rr-share"></i></button>
@@ -310,6 +312,23 @@
                     </div>
                 </div>
             </div>
+            <!-- Enrollment Model -->
+            <!-- <div class="modal fade EnrollModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg w-100 modal-dialog-scrollable bg-white rounded-4 border p-3">
+                    <div class="modal-content border-0">
+                        <div class="modal-header border-0">
+                            <h6 class="fs-4 fw-bold"><i class="fi fi-rr-lock-hashtag me-2"></i>Privacy Policy</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                        <div class="modal-footer border-0 pb-0">
+                            <button type="button" class="btn secondary-btn" data-bs-dismiss="modal">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </section>
 
         <section id="mentors" class="container-fluid px-0" style="background: var(--gradient-bg-dark);">
@@ -382,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="message-box px-4 py-5 m-auto my-3 w-100" style="max-width: 850px; background-color: var(--bg-gray-50); box-shadow: var(--shadow-card); border-radius: 50px;">
+                <div class="message-box px-4 py-5 m-auto my-3 w-100" style="max-width: 850px; background-color: var(--bg-gray-50); box-shadow: var(--shadow-card); border-radius: 25px;">
                     <h6 class="fw-semibold fs-5 mb-3 text-secondary"><i class="fi fi-rr-comment-dots me-2"></i>Message us your query...</h6>
                     <form id="contactForm" target="hidden_iframe">
                         <div class="row w-100 mb-3 ms-0 me-0 gap-3">
@@ -425,7 +444,7 @@
             </div>
             <div class="accordion container-xl d-flex flex-column justify-content-center align-items-center" id="FAQaccordion">
                 <!-- FAQ Item 1 -->
-                <div class="accordion-item w-100 mb-4 rounded-5 overflow-hidden" style="max-width: 850px;">
+                <div class="accordion-item w-100 mb-4 rounded-4 overflow-hidden" style="max-width: 850px;">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed p-4 fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                             <i class="fi fi-rr-lightbulb-question me-2 text-secondary"></i>
@@ -440,7 +459,7 @@
                 </div>
 
                 <!-- FAQ Item 2 -->
-                <div class="accordion-item w-100 mb-4 rounded-5 overflow-hidden" style="max-width: 850px;">
+                <div class="accordion-item w-100 mb-4 rounded-4 overflow-hidden" style="max-width: 850px;">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed p-4 fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                             <i class="fi fi-rr-lightbulb-on me-2 text-secondary"></i>
@@ -455,7 +474,7 @@
                 </div>
 
                 <!-- FAQ Item 3 -->
-                <div class="accordion-item w-100 mb-4 rounded-5 overflow-hidden" style="max-width: 850px;">
+                <div class="accordion-item w-100 mb-4 rounded-4 overflow-hidden" style="max-width: 850px;">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed p-4 fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                             <i class="fi fi-rr-star me-2 text-secondary"></i>
@@ -470,7 +489,7 @@
                 </div>
 
                 <!-- FAQ Item 4 -->
-                <div class="accordion-item w-100 mb-4 rounded-5 overflow-hidden" style="max-width: 850px;">
+                <div class="accordion-item w-100 mb-4 rounded-4 overflow-hidden" style="max-width: 850px;">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed p-4 fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                             <i class="fi fi-rr-award me-2 text-secondary"></i>
@@ -485,7 +504,7 @@
                 </div>
 
                 <!-- FAQ Item 5 -->
-                <div class="accordion-item w-100 mb-4 rounded-5 overflow-hidden" style="max-width: 850px;">
+                <div class="accordion-item w-100 mb-4 rounded-4 overflow-hidden" style="max-width: 850px;">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed p-4 fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                             <i class="fi fi-rr-graduation-cap me-2 text-secondary"></i>
@@ -508,7 +527,7 @@
                 <div class="w-100 text-left" style="max-width: 500px;">
                     <div class="logobox mb-3">
                         <a href="/" class="d-flex align-items-center" ping="./">
-                            <div class="overflow-hidden"  style="width: 50px !important; height: 50px !important; border-radius: 15px;">
+                            <div class="overflow-hidden"  style="width: 50px !important; height: 50px !important; border-radius: 12px;">
                                 <img src="Image/Future_Marg_Logo.png" alt="FutureMarg Logo" class="logo-img w-100" loading="eager" style="object-fit: fit;" loading="lazy">
                             </div>
                             <div class="ms-2">
@@ -535,7 +554,7 @@
                         <!-- modals -->
                         <!-- Privacy Policy Modal -->
                         <div class="modal fade privacyModal" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable bg-white rounded-5 border p-3">
+                            <div class="modal-dialog modal-dialog-scrollable bg-white rounded-4 border p-3">
                                 <div class="modal-content border-0">
                                     <div class="modal-header border-0">
                                         <h6 class="fs-4 fw-bold"><i class="fi fi-rr-lock-hashtag me-2"></i>Privacy Policy</h6>
@@ -581,7 +600,7 @@
                         </div>
                         <!-- Refund Modal -->
                         <div class="modal fade refundModal" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable bg-white rounded-5 border p-3">
+                            <div class="modal-dialog modal-dialog-scrollable bg-white rounded-4 border p-3">
                                 <div class="modal-content border-0">
                                     <div class="modal-header border-0">
                                         <h6 class="fs-4 fw-bold"><i class="fi fi-rr-indian-rupee-sign me-2"></i>Refund Policy</h6>
@@ -608,13 +627,13 @@
                         <h6 class="fs-5 fw-bold mb-3"><i class="fi fi-rr-phone-guide me-1"></i>Contact</h6>
                         <a href="mailto:contact.futuremarg@gmail.com"
                             class="secondary-link mb-2 d-flex flex-row align-items-start link-tertiary">
-                            <div class="d-flex align-items-center justify-content-center rounded-5">
+                            <div class="d-flex align-items-center justify-content-center">
                                 <i class="fi fi-rr-envelope me-2"></i>
                                 <span>contact.futuremarg@gmail.com</span>
                             </div>
                         </a>
                         <a href="tel:8447813380" class="secondary-link d-flex flex-row align-items-start link-tertiary">
-                            <div class="secondary-link d-flex align-items-center justify-content-center rounded-5">
+                            <div class="secondary-link d-flex align-items-center justify-content-center">
                                 <i class="fi fi-rr-phone-call me-2"></i>
                                 <span>+91 8447813380</span>
                             </div>
@@ -626,7 +645,7 @@
                 <div class="col w-100 text-left">
                     <p class="mb-0 w-100 d-inline-block" style="color: var(--slate-300);">© 2025 FutureMarg. All Rights Reserved. | Made with ❤️ for Students.</p>
                     <div class="col justify-content-end d-flex w-100 text-right">
-                        <button onclick="window.scrollTo(0,0)" type="button" class="btn fw-bold rounded-4 shadow-lg" style="color: var(--text-primary); background-color: var(--slate-300); box-shadow: var(--shadow-btn);">Back to top<i class="fi fi-rr-up ms-3"></i></button>
+                        <button onclick="window.scrollTo(0,0)" type="button" class="btn fw-bold rounded-3 shadow-lg" style="color: var(--text-primary); background-color: var(--slate-300); box-shadow: var(--shadow-btn);">Back to top<i class="fi fi-rr-up ms-3"></i></button>
                     </div>
                 </div>
             </div>
