@@ -101,6 +101,9 @@
     html {
         font-size: 14px;
     }
+    .carousel-inner{
+        border-radius: 15px !important;
+    }
     .features-card-wrapper .card{
         max-width: unset !important;
         width: 95% !important;
